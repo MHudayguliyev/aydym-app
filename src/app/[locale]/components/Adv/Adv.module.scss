@@ -1,0 +1,39 @@
+@use '../../styles/globalAnimation.scss' as GAnimation;
+@use '../../styles/globalShapes.scss' as Gshapes;
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalFunctions.scss' as *;
+
+.wrapper {
+    font-family: 'Roboto Slab', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // opacity: 0;
+    // visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(250, 248, 255, 0.7);
+    backdrop-filter: var(--modal-backdrop-blur);
+    -webkit-backdrop-filter: var(--modal-backdrop-blur);
+    z-index: Gshapes.$advBackdropZIndex + Gshapes.$ZIndexAddition;
+    -webkit-transition: all GAnimation.$modalDuration ease-in-out;
+    transition: all GAnimation.$modalDuration ease-in-out;
+    
+    @include Mixin.flexible($align: center)
+    
+}
+
+.content {
+    // border: 1px solid red;
+    color: var(--main-color);
+    @include Mixin.globalContainer;
+
+    .imgWrapper, .buttonWrapper, .header, .text{
+        text-align: center;
+    }
+    .buttonWrapper, .header, .text {
+        margin-top: toRem(16);
+    }
+}

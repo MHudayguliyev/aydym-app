@@ -1,0 +1,119 @@
+@use '../../styles/globalTypography.scss' as typography;
+@use '../../styles/globalAnimation.scss' as GAnimation;
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalFunctions.scss' as *;
+
+.baseStyle {
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 10px;
+    background-color: rgba(25,110,237,.1);
+    border-radius: var(--btn-border-radius);
+    font-weight: typography.$fontWeightMedium;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+ }
+
+ .baseStyle:focus, .baseStyle:active {
+    outline: none;
+    box-shadow: 0 0 0 3px #66adff;
+ }
+
+ .link {
+    color: inherit;
+ }
+ .withIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .opacitate {
+  opacity: .7;
+ }
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.roundedSm {
+  border-radius: calc(var(--border-radius) - 2px);
+}
+
+.roundedLg {
+  border-radius: 50%;
+}
+
+.colorLight {
+  color: var(--main-color);
+  background-color: var(--second-color-blue);
+}
+.colorBlue {
+  color: var(--main-color-blue);
+  background-color: var(--second-color-blue);
+  &:hover {
+    border: 1px solid var(--main-color-blue);
+  }
+}
+.colorDarkblue {
+  color: var(--light);
+  background-color: var(--main-color-blue);
+  transition: GAnimation.$iconAppearDuration ease-in-out;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.colorViolet{
+  color: var(--light);
+  background-color: var(--second-color);
+  transition: GAnimation.$iconAppearDuration ease-in-out;
+
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 0 0 0 3px #af92ff;
+ }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.colorGreen {
+  color: var(--light);
+  background-color: #346c4e;
+}
+.colorRed {
+  color: var(--light);
+  background-color: var(--main-color-red);
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--second-color-red);
+ }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.colorYellow {
+  color: var(--light);
+  background-color: var(--main-color-yellow);
+  &:focus, &:active {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--second-color-yellow);
+ }
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.loading_wrapper {
+  @include Mixin.flexible($align: center, $gap: toRem(8));
+
+  .loadingBtn {
+    height: 16px;
+    width: 16px;
+  }
+}
+

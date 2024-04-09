@@ -1,0 +1,13 @@
+@use '../../../styles/mixins.scss' as Mixin;
+@use '../../../styles/globalTypography.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.bannerModal {
+    @include Mixin.globalContainer();
+}
+
+.header {
+    @include Mixin.flexible($justify: flex-end, $align: center);
+    color: var(--list-title-main-color);
+    padding-right: .5em;
+}

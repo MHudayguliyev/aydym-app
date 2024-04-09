@@ -1,0 +1,4 @@
+@use './globalBreakPoints.scss' as breakpoint;
+:export {
+    large: breakpoint.$lg
+}

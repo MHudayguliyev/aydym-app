@@ -1,0 +1,45 @@
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalTypography.scss' as typography;
+@use '../../styles/globalFunctions.scss' as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+
+.wrapper {
+    @include Mixin.globalContainer;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 1;
+
+    .loader {
+        display: flex;
+        justify-content: center;
+    }
+
+    .error {
+        text-align: center;
+        margin-top: 3rem;
+        color: var(--dropdown-link-main-color);
+    }
+}
+.hero {
+    @include Mixin.hero;
+}
+.small_header {
+    font-weight: calc(typography.$fontWeightMedium + 100);
+    font-size: 1rem;
+    color: var(--dropdown-link-main-color);
+}
+.grid {
+    @include Mixin.grid($repeat: 1, $gap: toRem(16));
+    @media screen and (min-width: $sm) {
+        @include Mixin.grid($repeat: 2);
+    }
+    @media screen and (min-width: $md) {
+        @include Mixin.grid($repeat: 3);
+    }
+    @media screen and (min-width: $lg) {
+        @include Mixin.grid($repeat: 4);
+    }
+    @media screen and (min-width: $xl) {
+        @include Mixin.grid($repeat: 6);
+    }
+}

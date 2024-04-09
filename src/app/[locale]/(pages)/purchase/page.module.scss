@@ -1,0 +1,89 @@
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalTypography.scss' as *;
+@use '../../styles/globalFunctions.scss' as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+
+.hero {
+    @include Mixin.hero;
+}
+.wrapper {
+    @include Mixin.globalContainer;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 1;
+
+}
+.header {
+    text-align: center;
+    font-weight: $fontWeightBold;
+    font-size: calc($fontSizeBig + 8) + px;
+    font-family: 'Roboto slab';
+    margin-bottom: toRem(16);
+    color: var(--list-title-main-color);
+}
+.plan {
+    padding: toRem(16 * 2);
+    background: var(--main-premium-bg);
+    border-radius: toRem(16);
+    margin-top: toRem(16);
+}
+
+.plan_data {
+    @include Mixin.grid($repeat: 3);
+
+    .plan_col {
+        .plan_body {
+            padding: 1rem 1.5rem;
+
+            p {
+                opacity: .5;
+                font-size: toRem(16);
+                margin: toRem(16) 0;
+                color: var(--premium-main-color);
+            }
+            h4 {
+                font-size: calc($fontSizeBig + 8) + px;
+                font-weight: $fontWeightBold;
+                line-height: 1.25;
+                font-family: "Roboto Slab",serif;
+                margin-bottom: toRem(32 / 2);
+                text-align: center;
+                color: var(--list-title-main-color);
+                @include Mixin.flexible($gap: 0.3em)
+            }
+            .price {
+                text-align: center;
+                font-size: $fontSizeBig + px;
+                font-weight: $fontWeightMedium;
+                margin-top: -1rem;
+                font-family: "Roboto Slab",serif;
+                color: var(--list-title-main-color);
+            }
+
+
+            .features {
+                color: var(--premium-main-color);
+                .feature {
+                    @include Mixin.flexible($gap: .5rem, $justify: start);
+                    margin-bottom: toRem(16);
+                }
+            }
+
+        }
+    }
+    .plan_col:not(:first-child) {
+        border-left: 2px solid var(--dropdown-main-border-bg);
+    }
+
+    .plan_footer {
+        padding: .5rem 1.5rem;
+    }
+
+
+    @media screen and (max-width: $xl) {
+        @include Mixin.grid($repeat: 2);
+    }   
+    @media screen and (max-width: $sm) {
+        @include Mixin.grid($repeat: 1);
+    }  
+}

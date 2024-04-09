@@ -1,0 +1,74 @@
+// Open sans regular
+@font-face {
+    font-family: 'Open sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/OpenSans-Regular.ttf'); /* IE9 Compat Modes */
+    src: local('Open sans Regular'), local('Open sans Regular'),
+          url('../assets/fonts/OpenSans-Regular.ttf?#iefix') format('embedded-opentype'),
+          url('../assets/fonts/OpenSans-Regular.ttf') format('woff2'),
+          url('../assets/fonts/OpenSans-Regular.ttf') format('woff'),
+          url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+// Open sans  Italic
+@font-face {
+    font-family: 'Open sans';
+    font-style: italic;
+    src: url('../assets/fonts/OpenSans-Italic.ttf');
+    src: local('Open sans Italic'), local('OpenSans-Italic'),
+        url('../assets/fonts/OpenSans-Italic.ttf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/OpenSans-Italic.ttf') format('woff2'),
+        url('../assets/fonts/OpenSans-Italic.ttf') format('woff'),
+        url('../assets/fonts/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+}
+// Open sans Semi-Bold
+@font-face {
+    font-family: 'Open sans';
+    font-style: normal;
+    src: url('../assets/fonts/OpenSans-Semibold.ttf');
+    src: local('Open sans SemiBold'), local('OpenSans-SemiBold'),
+        url('../assets/fonts/OpenSans-Semibold.ttf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/OpenSans-Semibold.ttf') format('woff2'),
+        url('../assets/fonts/OpenSans-Semibold.ttf') format('woff'),
+        url('../assets/fonts/OpenSans-Semibold.ttf') format('truetype');
+    font-weight: 500;
+}
+
+// Open sans -Bold
+@font-face {
+    font-family: 'Open sans';
+    font-style: normal;
+    src: url('../assets/fonts/OpenSans-Bold.ttf');
+    src: local('Open sans Bold'), local('OpenSans-Bold'),
+        url('../assets/fonts/OpenSans-Bold.ttf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/OpenSans-Bold.ttf') format('woff2'),
+        url('../assets/fonts/OpenSans-Bold.ttf') format('woff'),
+        url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+// Roboto Slab -Regular
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    src: url('../assets/fonts/RobotoSlab-Regular.ttf');
+    src: local('Open sans Bold'), local('OpenSans-Bold'),
+        url('../assets/fonts/RobotoSlab-Regular.ttf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/RobotoSlab-Regular.ttf') format('woff2'),
+        url('../assets/fonts/RobotoSlab-Regular.ttf') format('woff'),
+        url('../assets/fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+// Roboto Slab -Bold
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    src: url('../assets/fonts/RobotoSlab-Bold.ttf');
+    src: local('Open sans Bold'), local('OpenSans-Bold'),
+        url('../assets/fonts/RobotoSlab-Bold.ttf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/RobotoSlab-Bold.ttf') format('woff2'),
+        url('../assets/fonts/RobotoSlab-Bold.ttf') format('woff'),
+        url('../assets/fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: 700;
+}

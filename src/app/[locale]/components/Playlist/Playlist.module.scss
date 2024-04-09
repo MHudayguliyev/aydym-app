@@ -1,0 +1,73 @@
+@use '../../styles/mixins.scss' as mixin;
+@use '../../styles/globalAnimation.scss' as GAnimation;
+@use '../../styles/globalShapes.scss' as GShapes;
+@use '../../styles/globalFunctions.scss' as *;
+
+.wrapper {
+    position: relative;
+}
+
+.playlist_menu {
+    position: absolute;
+    inset: auto 0px 20px auto;
+    padding: 0.5rem 0;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 10rem);
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 3rem 0 rgba(21,23,25,.25);
+    box-shadow: 0 0 3rem 0 rgba(21,23,25,.25);
+    background-color: var(--main-bg);
+    border: 0 solid rgba(0,0,0,.15);
+    border-radius: var(--dropdown-border-radius);
+    transform-origin: bottom right;
+    transform: scale(0);
+    transition: transform GAnimation.$duration ease 0s;
+    z-index: calc(GShapes.$audioPlayerZIndex + 1);
+    @include mixin.widthHeightSetter($width: 25rem, $height: 30rem);
+    @include mixin.scrollYMaker($width: 4px);
+
+
+    .header {
+        @include mixin.flexible($align: center, $justify: space-between);
+        padding: 1rem 1.5rem;
+
+        h6 {
+            font-size: toRem(16);
+            color: var(--list-title-main-color);
+        }
+
+        a { 
+            color: var(--main-color-blue);
+            text-decoration: none;
+            padding: 0 0 0.125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            font-size: .8125rem;
+            position: relative;
+            border-radius: 0;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: var(--main-color-blue);
+                height: 0.125rem;
+                transition: all .15s ease-in-out;
+                width: 100%;
+            }
+        }
+    }
+
+    .playlist {
+        padding: 0.5rem 1rem
+    }
+}
+
+.open {
+    transform: scale(1);
+    transition: transform .3s var(--transition-cubic);
+}

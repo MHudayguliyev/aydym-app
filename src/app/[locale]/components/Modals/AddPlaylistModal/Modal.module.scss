@@ -1,0 +1,73 @@
+@use '../../../styles/mixins.scss' as Mixin;
+@use '../../../styles/globalTypography.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.addPlaylistModal {
+    @include Mixin.globalContainer(true);
+    // min-height: 150px;
+}
+
+.header {
+    @include Mixin.flexible($justify: space-between, $align: center);
+    padding: 1rem 1rem;
+    color: var(--list-title-main-color);
+
+    .content {
+        h5 {
+            font-family: "Roboto Slab", serif;
+            font-weight: calc($fontWeightMedium + 100);
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+        p {
+            color: #6c757d;
+        }
+    }
+}
+
+.modalBody {
+    @include Mixin.flexible($align: center, $gap: 5px);
+    border-bottom: 1px solid var(--divider-main-bg);
+    padding: toRem(16);
+    margin-top: toRem(-16);
+
+    .inputField {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid var(--divider-main-bg);
+        color: #6c757d;
+    }
+}
+
+.footer {
+    padding: toRem(16);
+    margin-top: toRem(16);
+    height: 200px;
+    @include Mixin.scrollYMaker(5px);
+
+    h5 {
+        font-family: "Roboto Slab", serif;
+        font-weight: calc($fontWeightMedium + 100);
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .playlist {
+        padding: 0.75rem 0;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--list-main-hover-bg);
+        }
+        color: var(--main-color);
+    }
+
+    .borderBottom{
+        border-bottom: 1px solid var(--divider-main-bg);
+    }
+
+    .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

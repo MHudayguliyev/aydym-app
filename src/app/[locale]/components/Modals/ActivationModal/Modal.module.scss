@@ -1,0 +1,47 @@
+@use '../../../styles/mixins.scss' as Mixin;
+@use '../../../styles/globalTypography.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.activationModal {
+    @include Mixin.globalContainer(true);
+}
+
+.header {
+    @include Mixin.flexible($justify: space-between, $align: center);
+    padding: 1rem 1rem;
+    color: var(--list-title-main-color);
+    h5 {
+        font-family: "Roboto Slab", serif;
+        font-weight: calc($fontWeightMedium + 100);
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+    }
+}
+.theForm {
+    display: flex;
+    flex-direction: column;
+    padding: toRem(16);
+    margin-top: toRem(-16);
+
+    .inputField {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid var(--divider-main-bg);
+        color: #6c757d;
+        border-radius: var(--btn-border-radius);
+    }
+
+    .error {
+        color: var(--main-color-red);
+        font-size: 11px;
+        font-weight: 700;
+        height: 19px;
+    }
+}
+
+.successText {
+    padding: toRem(16);
+    margin-top: toRem(-16);
+    font-family: "Roboto Slab", serif;
+}
+

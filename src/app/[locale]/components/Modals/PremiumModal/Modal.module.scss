@@ -1,0 +1,42 @@
+@use '../../../styles/mixins.scss' as Mixin;
+@use '../../../styles/globalTypography.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.premiumModal {
+    @include Mixin.globalContainer(true);
+}
+
+.header {
+    @include Mixin.flexible($justify: space-between, $align: center);
+    padding: 1rem 1rem;
+    color: var(--list-title-main-color);
+
+    h5 {
+        font-family: "Roboto Slab", serif;
+        font-weight: calc($fontWeightMedium + 100);
+        font-size: 1.25rem;
+    }
+}
+
+.body {
+    padding: 1rem;
+    color: var(--premium-main-color);
+    .body_header {
+        margin-bottom: toRem(16);
+        font-size: $fontSizeBig + px;
+    }
+
+    .profile {
+        margin-bottom: 0.5em;
+        @include Mixin.flexible($align: center, $justify: flex-start, $gap: .5em)
+    }
+}
+
+.footer {
+    @include Mixin.flexible($justify: flex-end);
+    padding: 1rem 1rem 0 0;
+}
+
+.loading {
+    @include Mixin.flexible();
+}

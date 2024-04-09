@@ -1,0 +1,18 @@
+@function toRem($value) {
+    $remValue: calc($value / 16)+rem;
+    @return $remValue;
+}
+
+@function calcContentWidth($value){
+  $width: calc(100% - $value); 
+  @return $width;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: var(--skeleton-transform-main-bg);
+  }
+  100% {
+    background-color: var(--skeleton-main-bg);
+  }
+}

@@ -1,0 +1,130 @@
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalTypography.scss' as Typography;
+@use '../../styles/globalFunctions.scss'as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+
+.section {
+    margin-top: toRem(16);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:  toRem(16) 0;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--divider-main-bg);
+
+    div {
+        font-size: toRem(Typography.$fontSizeMedium);
+        font-weight: Typography.$fontWeightBold;
+        color: var(--main-color);
+    }
+
+    a { 
+        color: var(--main-color-blue);
+        padding: 0 0 0.125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        font-size: .8125rem;
+        position: relative;
+        border-radius: 0;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: var(--main-color-blue);
+            height: 0.125rem;
+            transition: all .15s ease-in-out;
+            width: 100%;
+        }
+
+    }
+}
+.grid_wrapper {
+    @include Mixin.grid($repeat: 6);
+
+    @media screen and (max-width: $xl) {
+        @include Mixin.grid($repeat: 3)
+    }
+    @media screen and (max-width: $sm) {
+        @include Mixin.grid($repeat: 1)
+    }
+}
+.grid_list_wrapper {
+    @include Mixin.grid($repeat: 3);
+
+    margin-top: toRem(16);
+
+    .media {
+        @include Mixin.flexible($align: center, $justify: flex-start, $gap: toRem(8));
+        border-radius: var(--btn-border-radius);
+        padding: .5rem;
+
+        .cover_image {
+            @include Mixin.widthHeightSetter(40px, 40px);
+            border-radius: .5rem;
+        }
+        .cover_content {
+            flex: 0 0 calc(100% - 2.5rem);
+            max-width: calc(100% - 2.5rem);
+            
+            p {
+                color: var(--main-color);
+                margin-bottom: 0.125rem;
+            }
+            p:nth-child(2){
+                font-size: Typography.$fontSizeSmall + px;
+            }
+        }
+
+        &:hover {
+            background-color:var(--list-main-hover-bg);
+        }
+    }
+
+    @media screen and (max-width: $xl) {
+        @include Mixin.grid($repeat: 2)
+    }
+    @media screen and (max-width: $sm) {
+        @include Mixin.grid($repeat: 1)
+    }
+}
+
+.skeleton {
+    @include Mixin.flexible($align: center, $justify: flex-start, $gap: toRem(8));
+
+    .skeleton_image {
+        @include Mixin.widthHeightSetter(40px, 40px);
+        border-radius: .5rem;
+        background-color: var(--skeleton-main-bg);
+        animation: skeleton-loading 1s linear infinite alternate;
+    }
+    .skeleton_content {
+        width: 100%;
+        @include Mixin.flexible($align: center, $dir: column, $gap: 5px);
+        div {
+            height: 16px;
+            width: 100%;
+            background-color: var(--skeleton-main-bg);
+            border-radius: var(--skeleton-content-radius);
+            animation: skeleton-loading 1s linear infinite alternate;
+        }
+        div:nth-child(2){
+            width: calc(100% / 2);
+            align-self: flex-start;
+        }
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: var(--skeleton-transform-main-bg);
+    }
+    100% {
+      background-color: var(--skeleton-main-bg);
+    }
+}

@@ -1,0 +1,211 @@
+@use './globalBreakPoints.scss' as *;
+@use "./globalFunctions.scss" as *;
+@use "./globalTypography.scss" as typography;
+@use "./fonts.scss";
+
+:root {
+   --light: #fff;
+   --dark: #000;
+
+   --main-bg: #fff;
+   --main-bg-light: #fff;
+   --main-bg-dark: #131416;
+
+   --main-premium-bg: #f5f7fa;
+   --premium-dark-bg: #1d1e22;
+   --premium-light-bg: #f5f7fa;
+
+   --premium-main-color: #57595b;
+   --premium-dark-color: #92929f;
+   --premium-light-color: #57595b; 
+   
+   --main-color: #323334;
+   --main-color-light: #cdcdde;
+   --main-color-dark: #323334;
+   --main-color-blue: #196eed;
+   --main-color-red: #E72412;
+   --main-color-green: #346c4e;
+   --main-color-yellow: #F7A928;
+   
+   --second-color: #7551d8;
+   --second-color-blue: rgba(25,110,237,.1);
+   --second-color-red: #ee6559;
+   --second-color-yellow: #f9c268;
+
+   --play-pause-bg: var(--light);
+   --play-pause-light-bg: var(--light);
+   --play-pause-dark-bg: #1d1e22;
+
+   --volume-main-bg: var(--main-bg-dark);
+   --volume-light-bg: #fff;
+   --volume-dark-bg: var(--main-bg-dark);
+
+   --skeleton-main-bg: #DDDDDD;
+   --skeleton-transform-main-bg: #b0b0b0;
+
+   --divider-main-bg: #eff2f5;
+   --divider-dark-bg: #202026;
+   --divider-light-bg: #eff2f5;
+
+   --dropdown-link-main-color: #57595b;
+   --dropdown-link-dark-color: #57595b;
+   --dropdown-link-light-color: #92929f;
+
+   --dropdown-main-bg: var(--light);
+   --dropdown-dark-bg: #1d1e22;
+   --dropdown-light-bg: var(--light);
+   --dropdown-main-border-bg:#e4e6ef;
+   --dropdown-light-border-bg: #e4e6ef;
+   --dropdown-dark-border-bg: #34343e;
+
+   --text-color-main:var(--light);
+   --text-color-dark: var(--dark);
+   --text-color-light: var(--light);
+
+   --sidebar-main-bg: #f8f9fa;
+   --sidebar-main-dark-bg:#222629;
+   --sidebar-main-light-bg: #f8f9fa;
+
+   --topnav-main-bg: var(--second-color);
+   --topnav-main-light-bg: var(--second-color);
+   --topnav-main-dark-bg: var(--sidebar-main-dark-bg);
+
+   --toggle-btn-main-bg: var(--sidebar-main-dark-bg);
+   --toggle-btn-light-bg: #ced4da;
+   --toggle-btn-dark-bg: var(--sidebar-main-dark-bg);
+
+   --input-main-color: var(--light);
+   --input-main-color-light: var(--light);
+   --input-main-color-dark: var(--dark);
+
+   --song-card-title-color: var(--light);
+   --song-card-title-color-light: var(--light); 
+   --song-card-title-color-dark: var(--dark);
+
+   --sidebar-header-color-main: #222629;
+   --sidebar-header-color-light: #dee2e6;
+   --sidebar-header-color-dark: #222629;
+
+   --list-title-main-color: var(--light);
+   --list-title-light-color: var(--light);
+   --list-title-dark-color: #151719;
+
+   --list-main-hover-bg: #F5F7FA;
+   --list-dark-hover-bg: #1d1e22;
+   --list-light-hover-bg: #F5F7FA;
+
+   --audio-player-head-main-color: #151719;
+   --audio-player-head-dark-color: #151719;
+   --audio-player-head-light-color: var(--light);
+   
+   --audio-player-subhead-main-color: #8c9095;
+   --audio-player-subhead-light-color: #8c9095;
+   --audio-player-subhead-dark-color: #5b5b6a;
+
+   --footer-header-main-color: #151719;
+   --footer-header-dark-color: #151719;
+   --footer-header-light-color: var(--light);
+
+   --footer-main-grandient-bg: rgba(255,255,255,.8);
+   --footer-light-gradient-bg: rgba(255,255,255,.8);
+   --footer-dark-gradient-bg: rgba(19,20,22,.8);
+
+   --icon-main-bg: var(--light);
+   --icon-light-bg: var(--light);
+   --icon-dark-bg: #151719;
+
+
+   --audio-player-box-shadow: 0 1px 2rem 0 rgba(0,0,0,.3);
+   --audio-player-height: 4.5rem;
+
+   --sidebar-width: 17.5rem;
+   --sidebar-folded-width: 4.5rem;
+   --sidebar-hidden: -17.5rem;
+
+   --artist-card-width-and-height: 8rem;
+   --global-grid-gap: .75rem;
+   --dropdown-height:  2.5rem;
+   
+   --content-max-width: 1320px;
+   --content-max-width-lg: 720px;
+   --content-max-width-md: 540px;
+
+   --card-border-radius: 1.5rem;
+   --border-radius: 15px;
+   --border-radius-circle: 50%;
+   --skeleton-content-radius: .1rem; 
+   --dropdown-border-radius: .375rem;
+   --modal-border-radius: 1rem;
+   --btn-border-radius: .25rem;
+   --table-border-radius: .5rem;
+   --layout-padding: 1.25rem;
+
+
+   --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+   --modal-backdrop-bg: rgba(0,0,0,.7);
+   --modal-backdrop-blur: blur(.125rem);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+ }
+
+ body {
+    font-family:"Open sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.7px;
+    scroll-behavior: smooth;
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: typography.$fontWeightRegular + px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        right: 5px;
+        border-radius: 5px;
+        background-color: var(--divider-main-bg);
+    }
+    &::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--second-color);
+    }
+
+ }
+
+a {
+   text-decoration: none;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+   opacity: 0 !important;
+   border-radius: var(--border-radius-circle) !important;
+   width: 2.5rem !important;
+   height: 2.5rem !important;
+   background: var(--main-bg) !important;
+   color: var(--main-color) !important;
+   margin-top: -3.25rem !important;
+}
+.swiper-button-next::after, .swiper-button-prev:after {
+    font-size: calc(typography.$fontSizeBig + 9) + px !important;
+}
+.swiper:hover .swiper-button-next,.swiper:hover .swiper-button-prev {
+   opacity: 1 !important;
+}
+.swiper:hover .swiper-button-disabled {
+   opacity: 0 !important;
+}

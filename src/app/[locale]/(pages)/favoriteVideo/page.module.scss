@@ -1,0 +1,80 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/globalTypography.scss' as *;
+
+.hero {
+    @include hero;
+}
+.underHero {
+    @include underHero;
+    @include globalContainer;
+
+    .header {
+        color: var(--main-color);
+    }
+    // .custom_list {
+    //     padding: 0;
+    //     margin: 0;
+    //     list-style: none;
+
+    //     .custom_list_item {
+    //         border-radius: var(--table-border-radius);
+    //         padding: .5rem;
+    //         display: flex;
+    //         flex-wrap: wrap;
+    //         align-items: center;
+    //         gap: 1rem;
+
+    //         .card {
+    //             display: flex;
+    //             flex: 0 0 75%;
+    //             width: 100%;
+    //             max-width: 75%;
+    //             padding-right: 0.5rem;
+    //             align-items: center;
+    //             cursor: pointer;
+
+    //             .image {
+    //                 width: 4rem;
+    //                 height: 4rem;
+    
+    //                 img {
+    //                     width: 100%;
+    //                     height: 100%;
+    //                     object-fit: cover;
+    //                     border-radius: 0.5rem;
+    //                     max-width: 100%;
+    //                     vertical-align: middle;
+    //                     border-style: none;
+    //                 }
+    //             }
+    
+    //             .title {
+    //                 padding-left: 1rem;
+    //                 flex: 0 0 calc(100% - 4rem);
+    //                 max-width: calc(100% - 4rem);
+                  
+    //                 p {
+    //                     overflow: hidden;
+    //                     text-overflow: ellipsis;
+    //                     white-space: nowrap;
+    //                 }
+                    
+    //                 p > a {
+    //                     color: #8c9095;
+    //                     font-weight: $fontWeightRegular;
+    //                     font-size: .8125rem;
+    //                 }
+    //             }
+    //         }
+
+    //         .icon {
+    //             display: flex;
+    //             margin: 0;
+    //             padding: 0;
+    //             list-style: none;
+    //             margin-left: auto;
+    //         }
+    //     }
+    // }
+}
+

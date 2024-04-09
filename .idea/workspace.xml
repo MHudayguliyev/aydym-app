@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8411c326-f1d8-41f7-916a-df0b2f60308d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/locales/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/tm.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/tm.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/album/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/album/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/artist/[...each]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/artist/[...each]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/artist/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/artist/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/genre/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/genre/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/playlist/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/playlist/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/song/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/song/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/page.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/[...each]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/(pages)/videoplay/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/api/Queries/Post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/api/Queries/Post.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/api/Types/queryReturnTypes/VideoInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/api/Types/queryReturnTypes/VideoInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/compLibrary/Tab/Tab.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/compLibrary/Tab/Tab.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/components/SongCard/SongCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/components/SongCard/SongCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/components/SongCard/SongCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/components/SongCard/SongCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/components/VideoJS/VideoJS.styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/components/VideoJS/VideoJS.styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/components/VideoJS/VideoJS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/components/VideoJS/VideoJS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/components/players/audio/audio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/components/players/audio/audio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/hooks/useWindowHeight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/hooks/useWindowHeight.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/styles/globalColumns.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/styles/globalColumns.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/utils/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/utils/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/utils/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/utils/storage.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2cFxfrjbZCEeLqqT5BhVS9eVSij" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "kakamyrat__dev",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "C:\\Users\\User\\Desktop\\aydym-web\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8411c326-f1d8-41f7-916a-df0b2f60308d" name="Changes" comment="" />
+      <created>1707721233558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707721233558</updated>
+      <workItem from="1707721234608" duration="10849000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="kakamyrat_dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

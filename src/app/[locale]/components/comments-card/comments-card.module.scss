@@ -1,0 +1,85 @@
+@use '../../styles/globalColumns.scss' as *;
+@use '../../styles/globalStyles.scss' as *;
+
+.comment {
+
+    .row > * {
+        max-width: 100%;
+        padding: 0 .75rem;
+    }
+
+    .ratings {
+        display: flex;
+        align-items: center;
+
+        span {
+            color: var(--dropdown-link-main-color);
+            margin-bottom: 0;
+        }
+
+        div {
+            padding-left: .5rem;
+        }
+    }
+
+    input, button, select, optgroup, textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.avatar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &:not(:first-child) {
+        margin-top: 1.5rem;
+    }
+
+    p {
+        color: var(--dropdown-link-main-color);
+    }
+    
+    &__image {
+        position: relative;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 0;
+        padding-left: 0.75rem;
+    }
+
+    &__stars {
+        display: flex;
+        gap: 4px;
+    }
+
+    &__title {
+        display: block;
+        font-weight: 500;
+        color: var(--main-color);
+    }
+
+    &__subtitle {
+        display: block;
+        color: #737578;
+        font-size: 0.8125rem;
+    }
+}

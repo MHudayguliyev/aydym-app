@@ -1,0 +1,77 @@
+@use '../styles/globalAnimation.scss' as GAnimation;
+@use '../styles/globalShapes.scss' as Gshapes;
+@use '../styles/mixins.scss' as Mixin;
+@use '../styles/globalTypography.scss' as Typography;
+@use '../styles/globalBreakPoints.scss'as *;
+
+.pages_layout {
+    max-width: 100%;
+    min-height: 100vh;
+    margin-left: var(--sidebar-width);
+    transition: GAnimation.$duration  all ease-in;
+    background: var(--main-bg);
+    padding: 0 var(--layout-padding);
+    overflow: hidden;
+
+    .layout_footer {
+        @include Mixin.heroFooter;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        margin-top: 6rem;
+
+
+        .content {
+            @include Mixin.globalContainer;
+            position: relative;
+            z-index: 1;
+
+            .text {
+                text-align: center;
+                margin-bottom: 1.5rem;
+
+                a {
+                    color: var(--footer-header-main-color);
+                    font-size: calc(1.425rem + 2.1vw);
+                    font-weight: calc(Typography.$fontWeightRegular - 100);
+                    line-height: 1.25;
+                }
+            }
+
+            .btn_group {
+                padding-top: .5rem;
+                @include Mixin.flexible($align: center, $justify: center, $wrap: wrap, $gap: .5rem)
+            }
+        }
+    }
+
+    @media screen and (max-width: $lg) {
+        margin-left: 0;
+    }
+}
+
+.sidebarFolded {
+    margin-left: var(--sidebar-folded-width);
+    @media screen and (max-width: $lg) {
+        margin-left: 0;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--modal-backdrop-bg);
+    backdrop-filter: var(--modal-backdrop-blur);
+    -webkit-backdrop-filter: var(--modal-backdrop-blur);
+    z-index: Gshapes.$modalZIndex;
+    -webkit-transition: all GAnimation.$modalDuration ease-in-out;
+    transition: all GAnimation.$modalDuration ease-in-out;
+}
+.active {
+    opacity: 1;
+    visibility: visible;
+}

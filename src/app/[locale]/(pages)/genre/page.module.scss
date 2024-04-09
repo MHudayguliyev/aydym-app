@@ -1,0 +1,36 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+@use '../../styles/globalFunctions.scss' as *;
+
+.hero {
+    @include hero;
+}
+.underHero {
+    @include globalContainer;
+    @include underHero;
+
+    .grid {
+        @include grid($repeat: 1, $gap: toRem(16));
+        @media screen and (min-width: $sm) {
+            @include grid($repeat: 2);
+        }
+        @media screen and (min-width: $md) {
+            @include grid($repeat: 3);
+        }
+        @media screen and (min-width: $lg) {
+            @include grid($repeat: 4);
+        }
+        @media screen and (min-width: $xl) {
+            @include grid($repeat: 6);
+        }
+    }
+    .head {
+        @include head
+    }
+    .loader {
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+    }
+    
+}

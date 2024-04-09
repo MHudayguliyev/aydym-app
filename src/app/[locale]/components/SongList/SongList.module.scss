@@ -1,0 +1,116 @@
+@use '../../styles/globalTypography.scss' as typography;
+@use '../../styles/mixins.scss' as mixins;
+@use '../../styles/globalAnimation.scss' as GAnimation;
+
+.section {
+    .custom_list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .custom_list_item {
+            border-radius: var(--table-border-radius);
+            padding: .5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+
+
+            .list_cover {
+                width: 4rem;
+                height: 4rem;
+                //min width goshdum suratyn width kicelmezligi ucin
+                min-width: 4rem;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                }
+
+                .playPause {
+                    height: 40px;
+                    width: 40px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+                    cursor: pointer;
+                }
+
+                .playing {
+                    opacity: 1;
+                    transition: 0.2s all ease-in;
+                }
+                .notPlaying {
+                    opacity: 0
+                }
+            }
+
+            .list_content {
+                flex-grow: 1; 
+                // max width ya-da width bermesen ellipse bolmayan ekeni
+                max-width: calc(100% - 15rem);
+                .songName {
+                    @include mixins.textEllipsis;
+                }
+                .songName > a {
+                    font-weight: typography.$fontWeightMedium;
+                    color: var(--list-title-main-color);
+                    margin-bottom: .125rem;
+                    width: 100px;
+                }
+                .artistName {
+                    @include mixins.textEllipsis;
+                }
+                .artistName > a {
+                    color: #8c9095;
+                    font-weight: typography.$fontWeightRegular;
+                    font-size: .8125rem;
+                }
+            }
+            .playlist_content {
+                max-width: calc(100% - 9rem);
+            }
+
+            .list_option {
+                padding-left: .1rem;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                span {
+                    color: #8c9095;
+                }
+            }
+
+            &:hover {
+                background-color: var(--list-main-hover-bg);
+
+                .playPause {
+                    opacity: 1;
+                    transition: 0.2s all ease-in;
+                }
+            }
+        }
+
+
+        .applyBg {
+            background-color: var(--list-main-hover-bg);
+        }
+    }
+}
+
+.notFound_wrapper {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--dropdown-link-main-color);
+}
+.loader {
+    @include mixins.flexible($justify: center);
+    margin-top: toRem(16 * 2);
+}

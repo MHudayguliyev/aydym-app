@@ -1,0 +1,124 @@
+@use '../../styles/globalTypography.scss' as typography;
+@use '../../styles/mixins.scss' as mixins;
+@use '../../styles/globalAnimation.scss' as GAnimation;
+@use '../../styles/globalBreakPoints.scss' as *;
+
+.statusWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    padding: .5rem;
+    color: var(--list-title-main-color);
+    font-weight: typography.$fontWeightMedium;
+    span {
+        width: 15rem;
+    }
+    span:first-child {
+        width: 30rem;
+        flex-shrink: 0;
+    }
+
+    @media screen and (max-width: $xl) {
+        span:first-child {
+            width: 20rem;
+        }
+    }
+    @media screen and (max-width: $sm) {
+        span:first-child {
+            width: 15rem;
+        }
+    }
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: var(--table-border-radius);
+
+    .currentPosition {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 30rem;
+        flex-shrink: 0;
+
+        .index {
+            width: 2rem;
+            color: var(--list-title-main-color);
+        }
+
+        img {
+            width: 4rem;
+            height: 4rem;
+            min-width: 4rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+
+        .songContent {
+            flex-grow: 1;
+            max-width: 15rem;
+
+            .songName, .artist{
+                @include mixins.textEllipsis;
+            }
+
+            .songName > a {
+                font-weight: typography.$fontWeightMedium;
+                color: var(--list-title-main-color);
+                margin-bottom: .125rem;
+                width: 100px;
+            }
+            .artist > a {
+                color: #8c9095;
+                font-weight: typography.$fontWeightRegular;
+                font-size: .8125rem;
+            }
+        }
+
+        @media screen and (max-width: $xl) {
+            width: 20rem;
+            .songContent {
+                width: 10rem;
+            }
+        }
+        @media screen and (max-width: $sm) {
+            width: 15rem;
+            .songContent {
+                width: 5rem;
+            }
+        }
+    }
+
+    .lastWeek, .topNotch, .presentFrom{
+        width: 20rem;
+        color: var(--list-title-main-color);
+    }
+
+
+    .list_option {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        flex-grow: 1;
+        justify-content: flex-end;
+        color: var(--list-title-main-color);
+
+        @media screen and (max-width: $md) {
+            display: none;
+        }
+    }
+
+    &:hover {
+        background-color: var(--list-main-hover-bg);
+    }
+}
+
+.applyBg {
+    background-color: var(--list-main-hover-bg);
+}

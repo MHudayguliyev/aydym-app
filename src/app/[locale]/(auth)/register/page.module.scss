@@ -1,0 +1,98 @@
+@use '../../styles/globalTypography.scss' as Typography;
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalFunctions.scss' as *;
+
+.wrapper {
+    @include Mixin.flexible($wrap: wrap, $align: center, $justify: center);
+    min-height: 100vh;
+    background: var(--light);
+    padding: 3rem 0;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--main-color-blue);
+        opacity: .05;
+    }
+}
+
+.card {
+    @include Mixin.globalContainer;
+
+    background-color: #fff;
+    border: none;
+    -webkit-box-shadow: 0 0 3rem 0 rgba(21,23,25,.1);
+    box-shadow: 0 0 3rem 0 rgba(21,23,25,.1);
+    z-index: 1000;
+}
+
+.card_body {
+    padding: 3rem;
+    color: #151719;
+    h4 {
+        font-family: 'Roboto Slab', serif;
+        font-size: calc(1.275rem + .3vw);
+        margin-bottom: toRem(8);
+
+        span {
+            color: var(--main-color-blue);
+            padding-left: .5rem;
+            
+        }
+    }
+
+    p{
+        font-size: toRem(Typography.$fontSizeBig);
+    }
+
+    form {
+        margin-top: 3rem;
+
+        .field {
+            border-radius: .375rem;
+            min-height: 2.5rem;
+            width: 100%;
+            border: 1px solid #e4e6ef;
+            margin-bottom: .5rem;
+
+
+            input[type=text] {
+                width: 100%;
+                min-height: 2.5rem;
+                color: #57595b;
+                padding: .4375rem .9375rem;
+                border-radius: .375rem;
+                -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+                transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+
+                &:focus, &:active {
+                    outline: none;
+                    box-shadow: 0 0 0 3px #66adff;
+                    border-radius: .375rem;
+                 }
+            }
+        }
+
+        .error {
+            height: 20px;
+            color: var(--main-color-red);
+        }
+
+        .submit {
+            margin-top: .5rem;
+            width: 100%;
+        }
+        .submit_flexible {
+            @include Mixin.flexible($justify: center, $align: center, $gap: toRem(8))
+
+        }
+
+    }
+}

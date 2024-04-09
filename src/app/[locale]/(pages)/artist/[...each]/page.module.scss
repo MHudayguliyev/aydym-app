@@ -1,0 +1,54 @@
+@use '../../../styles/mixins.scss' as *;
+@use '../../../styles/globalBreakPoints.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.hero {
+    @include hero('../assets/images/artists-bg.jpg')
+}
+.underHero {
+    @include globalContainer;
+    @include underHero;
+
+    .sort {
+        @include flexible($justify: space-between, $align: center);
+        span {
+            color: var(--main-color)
+        }
+    }
+    
+    .tab_content {
+        @include section;
+
+        & > .tab_pane {
+            display: none;
+        }
+
+        & > .active {
+            display: block;
+        }
+
+        .fade:not(.active) {
+            opacity: 0;
+        }
+
+        .fade {
+            transition: opacity .5s linear;
+        }   
+        
+        .grid {
+            @media screen and (min-width: $sm) {
+                @include grid($repeat: 2, $gap: toRem(16));
+            }
+            @media screen and (min-width: $md) {
+                @include grid($repeat: 3, $gap: toRem(16));
+            }
+            @media screen and (min-width: $lg) {
+                @include grid($repeat: 4, $gap: toRem(16));
+            }
+            @media screen and (min-width: $xl) {
+                @include grid($repeat: 6, $gap: toRem(16));
+            }
+        }
+    }
+    
+}

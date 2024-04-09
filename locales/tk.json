@@ -1,0 +1,232 @@
+{
+  "app": {
+    "slogan": "Iň täze türkmen aýdymlar, 2024 diňläň, lezzet alyň!",
+    "useragreement": "Ulanyjy Ylalaşygy",
+    "privacy": "Gizlinlik Syýasaty",
+    "law": "Awtorlyk hukugynyň eýeleri üçin",
+    "dmcacomplain": "Awtorlyk hukugynyň bozulmagy barada şikaýat etmek / DMCA complain",
+    "shareSong": "Скачать бесплатно песню {0} - слушать музыку онлайн на {1} без регистрации",
+    "sharePlaylist": "Слушать бесплатно сборник {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareAlbum": "Слушать бесплатно альбом {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareGenre": "Слушать бесплатно жанр {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareArtist": "Слушать бесплатно от исполнителя {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareVideo":"Слушать бесплатно видеоклип {0} - слушать музыку онлайн на {1} без регистрации",
+    "downloadTitle":"Aydym.com programmasy",
+    "downloadText":"Telefonda aýdym diňlemek has ýeňil, diňläň we lezzet alyň!"
+  },
+  "meta": {
+    "home": {
+      "description": "Aydym.com | Iň täze türkmen aýdymlar, 2024 diňläň, lezzet alyň!",
+      "title": "Aydym.com | iň täze türkmen aýdymlary 2024 diňläň, lezzet alyň!",
+      "keywords": "Aydymlar, aydym, taze aydym, halk aydym, estrada aydym, turkmen rep, Türkmen aýdymlary, Täze aýdymlar, aydymlar, turkmen aydymlary, turkmen aydym skacat, taze klipler, gosgular",
+      "appdesc":"На нашем музыкальном портале  вы можете скачать самые последние новинки и подборки лучших исполнителей современной музыкальной индустрии. Скачать вы можете абсолютно бесплатно. Что-бы использовать все возможности нашего портала можете пройти простую регистрацию и после чего в свободной форме использовать все возможности нашего портала."
+    },
+    "search": {
+      "title": "Aydym.com | iň täze türkmen aýdymlary 2024 diňläň, lezzet alyň!",
+      "description": "Aydym.com | Iň täze türkmen aýdymlar, 2024 diňläň, lezzet alyň!",
+      "keywords": "Aydymlar, aydym, taze aydym, halk aydym, estrada aydym, turkmen rep, Türkmen aýdymlary, Täze aýdymlar, aydymlar, turkmen aydymlary, turkmen aydym skacat, taze klipler, gosgular"
+    },
+    "playlist": {
+      "description": " {0} music portalynda {1} - playlisti diňläň, lezzet alyň.",
+      "index": {
+        "description": "{0} music portalynda iň gowy playlistleri, sbornikler we podborkalar.",
+        "keywords": "sbornik yuklemek,sbornik dinlemek,turkmen sbornik,playlist dinlemek,playlist,sbornik skacat,сборник,плейлист,слушать сборник,скачать сборник"
+      }
+    },
+    "song": {
+      "description": "{1} music portalynda {0} MP3 aýdymy mugt ýükläň, diňläň, lezzet alyň.",
+      "ogdescription": "{0} {1} {2} {3} {4} {5}",
+      "index": {
+        "description": "music portalynda iň täze we saýlanan aýdymlar.",
+        "keywords": "Aydymlar,aydym,taze aydym,halk aydym,estrada aydym,turkmen rep,Türkmen aýdymlary,Täze aýdymlar,aydymlar,turkmen aydymlary,turkmen aydym skacat,gosgular",
+        "infodesc": "Siz bu sahypada <b>{0} aýdymy ýükläp bilersiňiz</b>!. Öz android, iphone ýa-da kompýuteriňizden islendik wagt onlaýn diňläp, lezzet alyp bilersiňiz."
+      }
+    },
+    "album": {
+      "description": "{0} music portalynda {1} - albomyny diňläň, lezzet alyň.",
+      "index": {
+        "description": "{0} music portalynda albomlar.",
+        "keywords": "albom yuklemek,albom dinlemek,turkmen albom,albom skacat,album,альбом,скачать альбом,слушать альбом"
+      }
+    },
+    "artist": {
+      "description": "music portalynda {0} - bagşyny diňläň, lezzet alyň.",
+      "index": {
+        "description": "{0} music portalynda bagşylar.",
+        "keywords": "bagşylar,bagşy,turkmen bagşylar,aydymçy,aydymcy,bagsy,исполнители,артисты"
+      }
+    },
+    "genre": {
+      "description": " {0} music portalynda {1} - žanry diňläň, lezzet alyň.",
+      "index": {
+        "description": "{0} music portalynda žanrlar",
+        "keywords": "žanr dinlemek,turkmen žanr,žanr,жанр,слушать жанр,halk aydym,estrada aydym,turkmen rep,milli aydymlar,toý aydym,ertekiler,gosgular"
+      }
+    },
+    "video": {
+      "description": " {0} music portalynda {1} MP4 video şekilli aýdymlary mugt diňläň, lezzet alyň.",
+      "ogdescription": "{0} music portalynda {1} {2}  MP4 video şekilli aýdymlary mugt diňläň, lezzet alyň.",
+      "index": {
+        "description": "{0} music portalynda iň täze we saýlanan video şekilli aýdymlar.",
+        "keywords": "Şekilli Aydymlar, mp4, klip, video, wideo",
+        "infodesc": "Siz bu sahypada <b> {0} şekilli aýdymy diňläp bilersiňiz</b>!. Öz android, iphone ýa-da kompýuteriňizden islendik wagt onlaýn diňläp, lezzet alyp bilersiňiz."
+      }
+    }
+  },
+  "month": {
+    "1": "Ýanwar",
+    "2": "Fewral",
+    "3": "Mart",
+    "4": "Aprel",
+    "5": "Maý",
+    "6": "Iýun",
+    "7": "Iýul",
+    "8": "Awgust",
+    "9": "Sentýabr",
+    "10": "Oktýabr",
+    "11": "Noýabr",
+    "12": "Dekabr"
+  },
+  "paginate":{
+    "prev":"Yza",
+    "next":"Indiki"
+  },
+  "menu": {
+    "title": "Esasylar",
+    "home": "Baş sahypa",
+    "genres": "Žanrlar",
+    "music": "Aýdymlar",
+    "top": "TOP Aýdymlar",
+    "artists": "Bagşylar",
+    "additional": "Goşmaça",
+    "favorites": "Halanlarym",
+    "history": "Diňlänlerim",
+    "video": "Şekilli aýdymlar",
+    "albums": "Albomlar",
+    "playlists": "Playlistler",
+    "userPlaylists": "Meniň Playlistlerim",
+    "likedSongs": "Halanlarym",
+    "favoriteVideos":"Halan videolarym",
+    "search": "Gözleg"
+  },
+  "song": {
+    "description": "Aýdym Hakynda",
+    "text": "Sözleri",
+    "artist": "Ýerine ýetiriji",
+    "listens": "Diňlenildi",
+    "downloads": "Ýüklenildi",
+    "size": "Ölçegi",
+    "duration": "Dowamlylygy",
+    "bitrate": "Hil",
+    "date": "Goşuldy",
+    "title": "Aýdym",
+    "videoPlay":"Şekilli aýdymy diňlemek"
+  },
+  "songs": {
+    "toprated": "TOP aýdymlar"
+  },
+  "playlists": {
+    "toprated": "TOP playlist",
+    "title": "Playlistler"
+  },
+  "albums": {
+    "toprated": "TOP albomlar",
+    "title": "Albomlar"
+  },
+  "genres": {
+    "title": "Žanrlar"
+  },
+  "artist": {
+    "date": "Goşuldy",
+    "otherSongs":"Beýleki aýdymlary",
+    "about": "Aydymcy Barada"
+  },
+  "customer": {
+    "name": "<Ady Familiyasy>",
+    "signInPlease": "Войти в систему",
+    "desc": "Your order has been placed and will be processed as soon as possible.",
+    "settings": "Настройки",
+    "submit": "Войти",
+    "sendCode": "Отправить код подтверждения",
+    "confirmEmail": "Email tassyklama",
+    "confirmCode": "Belgi tassyklama",
+    "enterEmailOrPhone": "Dowam etmek üçin Email ýa-da telefon belgi ýazyň",
+    "enterSendedCode": "Siziň poçtaňyza ýa-da telefon belgiňize ugradylan kody aşakdaky öýjükde ýazyň",
+    "codeNotValid": "Неправильный код",
+    "enterSendedCodeShort": "Poçtaňyza/telefona ugradylan kody ýazyň",
+    "backToLogin": "Back to login"
+  },
+  "profile": {
+    "profile": "Профиль",
+    "upgradeToPremium": "PREMIUM Satyn almak",
+    "goPremium": "Go Premium",
+    "upgradeToPremiumText": "Aýdym.com ulgamynda aýdymlary reklamasyz diňlemek isleseňiz, we PREMIUM videolary görmek isleseňiz aşaky düwmä basyň",
+    "buyPremium": "PREMIUM Satyn almak",
+    "havePremium": "Sizde PREMIUM hasap bar"
+  },
+  "common": {
+    "description": "Hakynda",
+    "remFromPlaylist": "Aýyrmak",
+    "favroiteRemove": "Halanlarymdan aýyr",
+    "nothanks":"Ýok, Sag boluň",
+    "hello":"Salam",
+    "welcome":"Aydym.com saýtyna hoş geldiňiz!",
+    "okby":"Ok, Sagboluň!",
+    "back":"Yza",
+    "next":"Indiki",
+    "download": "Ýüklemek",
+    "share": "Paýlaşmak",
+    "favroiteAdd": "Halanlaryma goş",
+    "addToPlaylist": "Playliste goş"
+  },
+  "accType": {
+    "months": "{0} aýlyk",
+    "priceOneMoth": "{0} / aýda",
+    "savePercent": "Ekonom {0} %",
+    "feature1": "Reklamasyz diňlemek",
+    "feature2": "Internetsiz diňlemek",
+    "feature3": "Playlist internetsiz diňlemek",
+    "feature4": "Premium şekilli aýdymlar",
+    "priceOneMothTrial": "mugt",
+    "savePercentTrial": "mugt barla",
+    "monthsTrial": "{0} aý"
+  },
+  "analytics": {
+    "helpTitle": "Siz aýdymçy hökmünde girdiňiz, size giňişleýin statistika elýeter.",
+    "shortListenTotal": "Jemi diňleme sany",
+    "thisMonthTitle": "Şul aý {0}-de, siziň aýdymlaryň diňleme sany.",
+    "listenersCount": "Diňleýji sany",
+    "totalSongs": "Jemi aýdym",
+    "totalVideos": "Jemi video",
+    "listenStats": "Her aý boýunça",
+    "topSongs": "TOP aýdymlar"
+  },
+  "activationCode": {
+    "enterActivationCode": "Aktiwasiýa koduny giriziň",
+    "activate": "Kabul et",
+    "invalidCode": "Nädogry aktiwasiýa kody: {0}",
+    "alreadyActivatedCode": "Öň ulanylan aktiwasiýa kody: {0}"
+  },
+  "dynamicPlaylistType": {
+    "topWeek": "TOP {0} {1}",
+    "topMonth": "TOP {0} {1}",
+    "topLastWeek": "TOP {0} Soňky Hepde {1}",
+    "likedMonth": "Halanylanlar {0} {1}",
+    "likedWeek": "Halanylanlar {0} {1}",
+    "topChart": "TOP CHART {0}"
+  },
+ 
+  "sorted": "Tertipleme",
+  "listenAlso": "Maslahat berýäris",
+  "more_info": "Giňişleýin",
+  "close": "Ýapmak",
+  "notifications": "Täzelikler",
+  "currency": "TMT",
+  "select": "Ýyl saýla",
+  "likeCount":"Halanyldy",
+  "logout": "Выйти",
+  "latest": "Täze goşulanlar",
+  "viewMore": "Показать еще",
+  "viewAll": "Ählisini görkez",
+  "album": "Hakynda"
+}

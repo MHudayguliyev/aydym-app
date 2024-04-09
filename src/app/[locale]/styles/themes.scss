@@ -1,0 +1,51 @@
+.theme-mode-light {
+    --main-bg: var(--main-bg-light);
+    --main-premium-bg: var(--premium-light-bg);
+    --premium-main-color: var(--premium-light-color);
+    --main-color: var(--main-color-dark);
+    --sidebar-main-bg: var(--sidebar-main-light-bg);
+    --sidebar-header-color-main: var(--sidebar-header-color-dark);
+    --toggle-btn-main-bg: var(--toggle-btn-dark-bg);
+    --song-card-title-color:var(--song-card-title-color-dark);
+    --text-color-main: var(--text-color-dark);
+    --list-title-main-color: var(--list-title-dark-color);
+    --list-main-hover-bg: var(--list-light-hover-bg);
+    --divider-main-bg: var(--divider-light-bg);
+    --dropdown-main-bg: var(--dropdown-light-bg);
+    --dropdown-main-border-bg: var(--dropdown-light-border-bg);
+    --dropdown-link-main-color: var(--dropdown-link-dark-color);
+
+    --audio-player-head-main-color: var(--audio-player-head-dark-color);
+    --icon-main-bg: var(--icon-dark-bg);
+    --play-pause-bg: var(--play-pause-light-bg);
+    --volume-main-bg: var(--volume-dark-bg);
+
+    --footer-header-main-color: var(--footer-header-dark-color);
+    --footer-main-grandient-bg: var(--footer-light-gradient-bg);
+}
+
+.theme-mode-dark {
+    --main-bg: var(--main-bg-dark);
+    --main-premium-bg: var(--premium-dark-bg);
+    --premium-main-color: var(--premium-dark-color);
+    --main-color: var(--main-color-light);
+    --sidebar-main-bg: var(--sidebar-main-dark-bg);
+    --sidebar-header-color-main: var(--sidebar-header-color-light);
+    --toggle-btn-main-bg: var(--toggle-btn-light-bg);
+    --song-card-title-color:var(--song-card-title-color-light);
+    --text-color-main: var(--text-color-light);
+    --list-title-main-color: var(--list-title-light-color);
+    --list-main-hover-bg: var(--list-dark-hover-bg);
+    --divider-main-bg: var(--divider-dark-bg);
+    --dropdown-main-bg: var(--dropdown-dark-bg);
+    --dropdown-main-border-bg: var(--dropdown-dark-border-bg);
+    --dropdown-link-main-color: var(--dropdown-link-light-color);
+
+    --audio-player-head-main-color: var(--audio-player-head-light-color);
+    --icon-main-bg: var(--icon-light-bg);
+    --play-pause-bg: var(--play-pause-dark-bg);
+    --volume-main-bg: var(--volume-light-bg);
+
+    --footer-header-main-color: var(--footer-header-light-color);  
+    --footer-main-grandient-bg: var(--footer-dark-gradient-bg);
+}

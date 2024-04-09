@@ -1,0 +1,18 @@
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalTypography.scss' as typography;
+
+.wrapper {
+    @include Mixin.globalContainer;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero {
+    @include Mixin.hero;
+}
+.small_header {
+    font-weight: calc(typography.$fontWeightMedium + 100);
+    font-size: 1rem;
+    color: var(--dropdown-link-main-color);
+}

@@ -1,0 +1,3 @@
+type InitialState = {
+    mode: string
+}

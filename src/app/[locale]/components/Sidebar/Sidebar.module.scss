@@ -1,0 +1,130 @@
+@use '../../styles/globalTypography.scss' as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+@use '../../styles/globalAnimation.scss' as GAnimation;
+@use '../../styles/globalShapes.scss'as Shapes;
+@use '../../styles/mixins.scss' as Mixin;
+
+
+.sidebar_wrapper {
+    background-color: var(--sidebar-main-bg);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    transition: GAnimation.$duration all ease-in;
+    -webkit-transition: all GAnimation.$duration ease-in-out;
+    height: 100vh;
+    z-index: Shapes.$sidebarZIndex;
+
+    @media screen and (max-width: $lg) {
+        left:var(--sidebar-hidden);
+    }
+}
+
+.sidebarFolded {
+    width: var(--sidebar-folded-width);
+    @media screen and (max-width: $lg) {
+        left:var(--sidebar-hidden);
+        width: var(--sidebar-width);
+    }
+}
+.showHiddenSidebar {
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1rem 3rem;
+    height: 109px;
+
+    img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+}
+
+.navbar {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    ul {
+        max-height: calc(100vh - 11.5rem);
+        width: 100%;
+        list-style: none;
+    
+        .nav_header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: calc($fontWeightMedium + 100);
+            color: var(--sidebar-header-color-main);
+            @include Mixin.textEllipsis($ellisis: unset);
+        }
+
+        li {
+            padding: 0.625rem 1.5rem;
+            font-weight: $fontWeightMedium;
+            a {
+                text-decoration: none;
+                color: var(--main-color);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                span {
+                    padding-left: 1rem;
+                    @include Mixin.textEllipsis($ellisis: unset);
+                }
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+
+        .active {
+            position: relative;
+            background: -webkit-gradient(linear,left top, right top,color-stop(0, rgba(117,81,216,.1)),to(rgba(117,81,216,0)));
+            background: linear-gradient(90deg,rgba(117,81,216,.1) 0,rgba(117,81,216,0) 100%);
+            color: var(--second-color);
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 0.25rem;
+                background-color: var(--second-color);;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 0 1.5rem;
+    h6  {
+        margin: 1.5rem 0 1rem 0;
+        font-size: 1rem;
+        font-weight: calc($fontWeightMedium + 100);
+        line-height: 1.2;
+        color: var(--sidebar-header-color-main);
+    }
+    label {
+        color: var(--main-color);
+    }
+
+    .switch {   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,31 @@
+@use '../../styles/globalFunctions.scss' as *;
+@use '../../styles/globalTypography.scss' as typography;
+
+.banner {
+    position: relative;
+    cursor: pointer;
+
+    img {
+        object-fit: cover;
+        height: 250px;
+        width: 100%;
+        border-radius: toRem(16);
+    }
+
+    .content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: toRem(16);
+        a {
+            color: var(--light);    
+            h6 {
+                font-family: "Roboto Slab", serif;
+                font-size: toRem(typography.$fontSizeBig);
+                font-weight: calc(typography.$fontWeightMedium + 100);
+                line-height: 1.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+export {default as play} from './play.svg';
+export {default as playFill} from './play-fill.svg';
+export {default as heart} from './heart.svg';
+export {default as heartLine} from './heart-line.svg';
+export {default as heartFill} from './heart-fill.svg';
+export {default as star} from './star.svg';
+export {default as moreHorizontal} from './more-horizontal.svg';
+export {default as moreVertical} from './more-vertical.svg';
+export {default as download} from './download.svg';
+export {default as vipCrown} from './vip-crown-fill.svg';
+export {default as starFill} from './star-fill.svg';
+export {default as replyIcon} from './reply-line.svg';
+export {default as thumbLike} from './thumb-like.svg';
+export {default as thumbDisLike} from './thumb-dislike.svg';
+export {default as share} from './share.svg';
+export {default as settingsFill} from './settings-fill.svg';

@@ -1,0 +1,57 @@
+@use '../../styles/globalBreakPoints.scss' as *;
+@use '../../styles/globalAnimation.scss' as *;
+@use '../../styles//mixins.scss' as *;
+
+.nav__tabs {
+    @include flexible($wrap: wrap, $justify: flex-start);
+    padding-left: 0;
+    list-style: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  
+    .nav__item {
+      margin-top: 0;
+  
+      .nav__link {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease; 
+        cursor: pointer;
+        position: relative;
+        color: var(--main-color); 
+        font-size: 12px;
+  
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #753fdc;
+          transition: width 0.5s ease; 
+        }
+  
+        &.active {
+          color: #753fdc;
+          
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+
+    }
+    .tabs_link_line {
+      background-color: #753fdc;
+      position: absolute;
+      bottom: -0.25rem;
+      display: block;
+      height: 2px;
+      transition: 0.4s all ease-in;
+    }
+  }
+  

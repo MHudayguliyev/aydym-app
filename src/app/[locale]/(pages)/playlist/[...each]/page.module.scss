@@ -1,0 +1,14 @@
+@use '../../../styles/mixins.scss' as *;
+
+.hero {
+    @include hero('../assets/images/album_image.jpg');
+}
+
+.underHero {
+    @include globalContainer;
+    @include underHero;
+
+    .head {
+        @include head;
+    }
+}

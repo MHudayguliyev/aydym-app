@@ -1,0 +1,40 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/globalBreakPoints.scss' as *;
+@use '../../styles/globalFunctions.scss' as *;
+
+.hero {
+    @include hero('../assets/images/artists-bg.jpg')
+}
+.underHero {
+    
+    @include globalContainer;
+    @include underHero;
+
+    .section {
+        @include section;
+    
+        .head {
+            @include head;
+        }
+    }
+    .grid {
+        @include grid($repeat: 6, $gap: toRem(16));
+        @media screen and (max-width: $xl) {
+            @include grid($repeat: 4);
+        }
+        @media screen and (max-width: $lg) {
+            @include grid($repeat: 2);
+        }
+        @media screen and (max-width: $sm) {
+            @include grid($repeat: 1);
+        }
+    }
+
+    .loader {
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+    }
+}
+
+  

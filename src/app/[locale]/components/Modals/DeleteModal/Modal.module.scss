@@ -1,0 +1,15 @@
+@use '../../../styles/mixins.scss' as Mixin;
+@use '../../../styles/globalTypography.scss' as *;
+@use '../../../styles/globalFunctions.scss' as *;
+
+.deleteModal {
+    @include Mixin.globalContainer(true);
+    min-height: 150px;
+}
+.text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.buttonGroup {
+    @include Mixin.flexible($justify: center, $gap: 4px);
+}

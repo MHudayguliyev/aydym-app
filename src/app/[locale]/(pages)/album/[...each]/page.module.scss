@@ -1,0 +1,36 @@
+@use '@styles/mixins.scss' as *;
+
+.hero {
+    @include hero('../assets/images/album_image.jpg');
+}
+
+.underHero {
+    @include globalContainer;
+    @include underHero;
+
+    .section {
+        @include section
+    }
+    .head {
+        @include head;
+    }
+
+    .songs {
+        display: flex;
+        flex-direction: column;
+
+        .sort {
+            @include flexible($justify: space-between, $align: center);
+            span {
+                color: var(--main-color)
+            }
+        }
+    
+        .loadMore {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+}

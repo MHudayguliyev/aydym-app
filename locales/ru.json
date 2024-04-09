@@ -1,0 +1,232 @@
+{
+  "app": {
+    "slogan": "Iň täze türkmen aýdymlar, 2024 diňläň, lezzet alyň!",
+    "useragreement": "Пользовательское соглашение",
+    "privacy": "Политика конфиденциальности Сайта",
+    "law": "Правообладателям",
+    "dmcacomplain": "Пожаловаться на нарушение авторских прав / DMCA complain",
+    "shareSong": "Скачать бесплатно песню {0} - слушать музыку онлайн на {1} без регистрации",
+    "sharePlaylist": "Слушать бесплатно сборник {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareAlbum": "Слушать бесплатно альбом {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareGenre": "Слушать бесплатно жанр {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareArtist": "Слушать бесплатно от исполнителя {0} - слушать музыку онлайн на {1} без регистрации",
+    "shareVideo":"Слушать бесплатно видеоклип {0} - слушать музыку онлайн на {1} без регистрации",
+    "downloadTitle":"Приложение Aydym.com",
+    "downloadText":"Слушать песни в телефоне намного удобнее, наслаждайтесь!"
+  },
+  "meta": {
+    "home": {
+      "description": "Aydym.com | Iň täze türkmen aýdymlar, 2024 diňläň, lezzet alyň!",
+      "title": "Aydym.com | iň täze türkmen aýdymlary 2024 diňläň, lezzet alyň!",
+      "keywords": "Aydymlar, aydym, taze aydym, halk aydym, estrada aydym, turkmen rep, Türkmen aýdymlary, Täze aýdymlar, aydymlar, turkmen aydymlary, turkmen aydym skacat, taze klipler, gosgular",
+      "appdesc":"На нашем музыкальном портале {0} вы можете скачать самые последние новинки и подборки лучших исполнителей современной музыкальной индустрии. Скачать вы можете абсолютно бесплатно. Что-бы использовать все возможности нашего портала можете пройти простую регистрацию и после чего в свободной форме использовать все возможности нашего портала."
+    },
+    "search": {
+      "title": "Поиск по сайту » Aydym.Com - Скачать и слушать песни Mp3 бесплатно",
+      "description": "Aydym.Com - Свежие музыкальные новинки",
+      "keywords": "Aydym, скачать mp3 бесплатно без смс и регистрации, только свежие хиты лучших музыкальных исполнителей, новинки каждый день 2024, только лучшие хиты, лучшая музыка, скачать 128kbps 320kbps mp3"
+    },
+    "playlist": {
+      "description": "Слушать бесплатно сборник {0} - слушать музыку онлайн на {1} без регистрации", 
+      "index": {
+        "description": "Слушай лучшие сборники песен бесплатно и наслаждайся хорошими подборками музыки онлайн на {0}!",
+        "keywords": "sbornik yuklemek,sbornik dinlemek,turkmen sbornik,playlist dinlemek,playlist,sbornik skacat,сборник,плейлист,слушать сборник,скачать сборник"
+      }
+    },
+    "song": {
+      "description": "Скачать бесплатно песню {0} - слушать музыку онлайн на {1} без регистрации",
+      "ogdescription": "{0} {1} {2} {3} {4} {5}",
+      "index": {
+        "description": "Последние новинки музыки на Aydym.com",
+        "keywords": "Aydymlar,aydym,taze aydym,halk aydym,estrada aydym,turkmen rep,Türkmen aýdymlary,Täze aýdymlar,aydymlar,turkmen aydymlary,turkmen aydym skacat,gosgular",
+        "infodesc": "На этой странице Вы можете <b>скачать песню {0}</b>!. Слушайте онлайн в хорошем качестве, со своего телефона на android, iphone или пк в любое время."
+      }
+    },
+    "album": {
+      "description": "Слушать бесплатно альбом {0} - слушать музыку онлайн на {1} без регистрации",
+      "index": {
+        "description": "Слушай лучшие альбомы бесплатно онлайн на {0}!",
+        "keywords": "albom yuklemek,albom dinlemek,turkmen albom,albom skacat,album,альбом,скачать альбом,слушать альбом"
+      }
+    },
+    "artist": {
+      "description": "Слушать бесплатно от исполнителя {0} - слушать музыку онлайн на {1} без регистрации",
+      "index": {
+        "description": "Исполнители на {0}!",
+        "keywords": "bagşylar,bagşy,turkmen bagşylar,aydymçy,aydymcy,bagsy,исполнители,артисты"
+      }
+    },
+    "genre": {
+      "description": "Слушать бесплатно жанр {0} - слушать музыку онлайн на {1} без регистрации",
+      "index": {
+        "description": "Слушай лучшие жанры музыки бесплатно онлайн на {0}!",
+        "keywords": "žanr dinlemek,turkmen žanr,žanr,жанр,слушать жанр,halk aydym,estrada aydym,turkmen rep,milli aydymlar,toý aydym,ertekiler,gosgular"
+      }
+    },
+    "video": {
+      "description": "Смотреть бесплатно видеоклип {0} - слушать музыку онлайн на {1} без регистрации",
+      "ogdescription": "Смотреть бесплатно видеоклип {1} {2} - слушать музыку онлайн на {0} без регистрации",
+      "index": {
+        "description": "Последние новинки видеоклипов на {0}.",
+        "keywords": "Видео, клип, mp4",
+        "infodesc": "На этой странице Вы можете <b>смореть видеоклип {0}</b>!. Смотреть онлайн в хорошем качестве, со своего телефона на android, iphone или пк в любое время."
+      }
+    }
+  },
+  "month": {
+    "1": "Январь",
+    "2": "Февраль",
+    "3": "Март",
+    "4": "Апрель",
+    "5": "Май",
+    "6": "Июнь",
+    "7": "Июль",
+    "8": "Август",
+    "9": "Сентябрь",
+    "10": "Октябрь",
+    "11": "Ноябрь",
+    "12": "Декабрь"
+  },
+  "paginate":{
+    "prev":"Предыдущий",
+    "next":"Следующий"
+  },
+  "menu": {
+    "title": "Основные", 
+    "home": "Главная",
+    "genres": "Жанры",
+    "music": "Все песни",
+    "top": "TOP песни",
+    "artists": "Исполнители",
+    "additional": "Дополнительно",
+    "favorites": "Фавориты",
+    "history": "История",
+    "video": "Видеоклипы",
+    "albums": "Альбомы",
+    "playlists": "Сборники",
+    "userPlaylists": "Списки воспроизведения",
+    "search": "Поиск",
+    "likedSongs": "Избранные",
+    "favoriteVideos":"Избранное видео"
+  },
+  "song": {
+    "description": "О треке",
+    "text": "Текст",
+    "artist": "Исполнитель",
+    "listens": "Прослушали",
+    "downloads": "Скачали",
+    "size": "Размер",
+    "duration": "Продолжительность",
+    "bitrate": "Битрейт",
+    "date": "Добавлено",
+    "title": "Треков",
+    "videoPlay":"Şekilli aýdymy diňlemek"
+  },
+  "songs": {
+    "toprated": "TOP треки"
+  },
+  "playlists": {
+    "toprated": "TOP сборники",
+    "title": "Сборники"
+  },
+  "albums": {
+    "toprated": "TOP альбомы",
+    "title": "Альбомы"
+  },
+  "genres": {
+    "title": "Жанры"
+  },
+  "artist": {
+    "date": "Добавлено",
+    "otherSongs":"Другие треки этого исполнителя",
+    "about": "Об Исполнителе"
+  },
+  "customer": {
+    "name": "<Имя фамилия>",
+    "signInPlease": "Войти в систему",
+    "desc": "После входа в систему вам будут доступны дополнительные функции сайта.",
+    "settings": "Настройки",
+    "submit": "Войти",
+    "sendCode": "Отправить код подтверждения",
+    "confirmEmail": "Подтверждение почты/тел.номера",
+    "confirmCode": "Подтверждение кода",
+    "enterEmailOrPhone": "Введите адрес эл. почты или телефонный номер для получения инструкций",
+    "enterSendedCode": "Введите код отправленный вам на почту или на телефонный номер",
+    "codeNotValid": "Неправильный код",
+    "enterSendedCodeShort": "Введите код отправленный на почту/тел.номер",
+    "backToLogin": "Назад"
+  },
+  "profile": {
+    "profile": "Профиль",
+    "upgradeToPremium": "Купить PREMIUM",
+    "goPremium": "Купить",
+    "upgradeToPremiumText": "Что-бы слушать музыку на Aydym.com без рекламы, а так-же смотреть премиум видеоклипы, купите PREMIUM подписку",
+    "buyPremium": "Купить PREMIUM",
+    "havePremium": "У Вас PREMIUM подписка"
+  },
+  "common": {
+    "description": "Описание",
+    "remFromPlaylist": "Убрать",
+    "favroiteRemove": "Убрать",
+    "nothanks":"Спасибо, не надо",
+    "hello":"Привет",
+    "welcome":"Добро пожаловать на сайт Aydym.com!",
+    "okby":"ОК, Спасибо!",
+    "back":"Предыдущий",
+    "next":"Следующий",
+    "download": "Скачать",
+    "share": "Поделиться",
+    "favroiteAdd": "Избранное",
+    "addToPlaylist": "В плейлист"
+  },
+  "accType": {
+    "months": " месяцев",
+    "priceOneMoth": " / месяц",
+    "savePercent": "Экономия  %",
+    "feature1": "Слушать без рекламы",
+    "feature2": "Безлимитный офлайн режим",
+    "feature3": "Офлайн режим в плейлистах",
+    "feature4": "Премиум видеоклипы",
+    "priceOneMothTrial": "бесплатно",
+    "savePercentTrial": "попробуй бесплатно",
+    "monthsTrial": "месяц"
+  },
+  "analytics": {
+    "helpTitle": "Вы вошли как исполнитель, вам доступны расширенная статистика.",
+    "shortListenTotal": "Прослушивание",
+    "thisMonthTitle": "Всего прослушиваний ваших песень за этот месяц - .",
+    "listenersCount": "Кол. слушателей",
+    "totalSongs": "Кол. песен",
+    "totalVideos": "Кол. видео",
+    "listenStats": "По месяцам",
+    "topSongs": "TOP песни"
+  },
+  "activationCode": {
+    "enterActivationCode": "Введите код активации",
+    "activate": "Активировать",
+    "invalidCode": "Ошибка. Неверный код активации:",
+    "alreadyActivatedCode": "Ошибка. Использованный код активации: {0}"
+  },
+  "dynamicPlaylistType": {
+    "topWeek": "TOP ",
+    "topMonth": "TOP ",
+    "topLastWeek": "TOP  Soňky Hepde ",
+    "likedMonth": "Halanylanlar",
+    "likedWeek": "Halanylanlar",
+    "topChart": "TOP CHART"
+  },
+  
+  "sorted": "Сортировка",
+  "listenAlso": "Слушайте также",
+  "more_info": "Подробно",
+  "close": "Закрыть",
+  "notifications": "Уведомления",
+  "currency": "TMT",
+  "select": "Выберите год",
+  "likeCount":"Понравилось",
+  "logout": "Выйти",
+  "latest": "Последние треки",
+  "viewMore": "Показать еще",
+  "viewAll": "Показать все",
+  "album": "Описание"
+}

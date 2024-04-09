@@ -1,0 +1,55 @@
+@use '../../styles/globalColumns.scss' as *;
+
+.card {
+    padding: 0 15px 24px;
+
+    a{
+        text-decoration: none;
+        color: var(--main-color);
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+        }
+        span {
+            display: block;
+            margin-top: 0.5rem;
+            color: var(--list-title-main-color);
+            font-weight: 600;
+        }
+    }
+
+    .cardImage {
+        position: relative;
+
+        .videoplay {
+            position: absolute;
+            opacity: .5;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .genre {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            background: rgba(0, 0, 0, .4);
+            color: #ffffff;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+    }
+
+}
+
+
+
+

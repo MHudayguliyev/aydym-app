@@ -1,0 +1,63 @@
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+.row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -.75rem;
+  margin-left: -.75rem;
+}
+
+@for $i from 1 through 12 {
+  .col__#{$i} {
+    width: percentage($i / 12);
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  $min-width: map-get($breakpoints, $breakpoint);
+
+  @media (min-width: #{$min-width}) {
+    .col__#{$breakpoint} {
+      width: 100%;
+    }
+
+    @for $i from 1 through 12 {
+      .col__#{$breakpoint}__#{$i} {
+        width: percentage($i / 12);
+      }
+    }
+  }
+}
+
+@mixin generate-columns($breakpoints: null) {
+  @for $i from 1 through 12 {
+    .col__#{$i} {
+      width: percentage($i / 12);
+    }
+  }
+
+  @if $breakpoints {
+    @each $breakpoint, $value in $breakpoints {
+      $min-width: map-get($breakpoints, $breakpoint);
+
+      @media (min-width: #{$min-width}) {
+        .col__#{$breakpoint} {
+          width: 100%;
+        }
+
+        @for $j from 1 through 12 {
+          .col__#{$breakpoint}__#{$j} {
+            width: percentage($j / 12);
+          }
+        }
+      }
+    }
+  }
+}
+

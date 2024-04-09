@@ -1,0 +1,28 @@
+@use '../../../styles/globalAnimation.scss' as GAnimation;
+
+.wrapper {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    border-radius: 50rem;
+    padding: 10px;
+    background: var(--play-pause-bg);
+    transition: color GAnimation.$modalDuration ease-in-out,background-color GAnimation.$modalDuration ease-in-out,border-color GAnimation.$modalDuration ease-in-out,box-shadow GAnimation.$modalDuration ease-in-out,-webkit-box-shadow GAnimation.$modalDuration ease-in-out;
+    -webkit-transition: color GAnimation.$modalDuration  ease-in-out,background-color GAnimation.$modalDuration  ease-in-out,border-color GAnimation.$modalDuration  ease-in-out,-webkit-box-shadow GAnimation.$modalDuration  ease-in-out;
+}
+
+.hoverable {
+    &:hover {
+        background-color: var(--second-color);
+        svg {
+            stroke: var(--light);
+            fill: var(--light);
+        }
+    }
+}
+
+.makeBgActive {
+    background-color: var(--second-color);
+}

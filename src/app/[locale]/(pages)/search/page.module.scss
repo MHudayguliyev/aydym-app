@@ -1,0 +1,22 @@
+@use '../../styles/mixins.scss' as Mixin;
+@use '../../styles/globalTypography.scss' as Typography;
+
+.hero {
+    @include Mixin.hero; 
+}
+.wrapper {
+    @include Mixin.globalContainer;
+    margin-top: -3rem;
+    z-index: 1;
+    position: relative;
+    color: var(--main-color);
+
+    h1 {
+        font-family: 'Roboto Slab', sans-serif;
+        font-weight: Typography.$fontWeightBold;
+        font-size: calc(Typography.$fontSizeBig + 6) + px;
+        span {
+            font-style: italic;
+        }
+    }
+}

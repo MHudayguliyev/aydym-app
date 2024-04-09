@@ -1,0 +1,11 @@
+@use '../../styles/globalShapes.scss' as GShapes;
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0.25rem;
+    background-color: var(--main-color-blue);
+    z-index: calc(GShapes.$sidebarZIndex + 1);
+    transition: 0.2s ease;
+}
